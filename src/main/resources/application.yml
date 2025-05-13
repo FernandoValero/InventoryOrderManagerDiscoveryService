@@ -1,11 +1,7 @@
-server:
-    port: 8761
-
 spring:
   application:
     name: discovery-service
+  config:
+    import: "configserver:http://localhost:8888" #Servidor desde el cual se extraera la configuracion (config-server)
+                                                  #La configuracion se explicara al momento de crear el config-server
 
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
