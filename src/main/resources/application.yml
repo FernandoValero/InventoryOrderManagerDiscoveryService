@@ -2,6 +2,4 @@ spring:
   application:
     name: discovery-service
   config:
-    import: "configserver:http://localhost:8888" #Servidor desde el cual se extraera la configuracion (config-server)
-                                                  #La configuracion se explicara al momento de crear el config-server
-
+    import: "configserver:http://localhost:8888"
